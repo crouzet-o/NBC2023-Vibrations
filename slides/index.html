@@ -1,0 +1,928 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/league.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+	  <div class="reveal">
+	    <div class="slides">
+		
+		
+		<section data-markdown>
+		  
+		  <textarea data-template>
+		  # Atelier : Perception des sons
+
+		  - Frontières entre audition "normale" et audition des
+		  personnes sourdes portant un implant cochléaire.
+
+		  - Frontières entre parole et musique.
+		  </textarea>
+		</section>
+		
+		
+		<section data-markdown>
+		  
+		  <textarea data-template>
+		    ## Fréquences multiples dans la parole
+		    
+		    - On décompose le signal de parole en 16
+		    canaux de fréquence (seuls 8 sont
+		    représentés);
+		    
+		    - Basses fréquences en bas, Hautes fréquences en haut;
+
+		    - Même chose pour la musique et tous les sons de l'environnement;
+		  </textarea>
+		</section>
+		
+		
+		<section>
+		  <h2></h2>
+		  
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_16_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_14_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_12_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_10_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_08_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_06_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_04_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_02_16.wav"></audio>
+		  </div>
+		  
+		</section>
+		
+		
+		<section data-markdown>
+		  
+		  <textarea data-template>
+		    ## Vocodage de parole
+		    
+		    - On décompose le signal de parole en 16
+		    canaux de fréquence (seuls 8 sont
+		    représentés);
+		    
+		    - On les traite à travers un vocodeur et on
+		    les recombine;
+		  </textarea>
+		</section>
+		
+		
+		<section>
+		  <h2></h2>
+		  
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_ModulatedCarrier_16_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_ModulatedCarrier_14_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_ModulatedCarrier_12_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_ModulatedCarrier_10_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_ModulatedCarrier_08_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_ModulatedCarrier_06_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_ModulatedCarrier_04_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_ModulatedCarrier_02_16.wav"></audio>
+		  </div>
+		  
+		  <figure>
+		    <figcaption>Recombinaison</figcaption>
+		    <span align="right">
+			<audio controls src="audiofiles/speech/frl1151_phsc_16bands_VocodedSpeech.wav"></audio>
+		    </span>
+		  </figure>
+		  
+		</section>
+		
+
+
+				<section data-markdown>
+		  
+		  <textarea data-template>
+		    ## Fréquences multiples dans la parole&nbsp;: retour au signal original
+		    
+		    - On décompose le signal de parole en 16
+		    canaux de fréquence (seuls 8 sont
+		    représentés);
+		    
+		    - Basses fréquences en bas, Hautes fréquences en haut;
+		    
+		    - On les recombine à la fin;
+		  </textarea>
+		</section>
+
+
+		<section>
+		  <h2></h2>
+		  
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_16_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_14_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_12_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_10_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_08_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_06_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_04_16.wav"></audio>
+		  </div>
+		  <div align="left">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_16bands_OriginalBand_02_16.wav"></audio>
+		  </div>
+		  
+		  <figure>
+		    <figcaption>Recombinaison</figcaption>
+		    <span align="right">
+			<audio controls src="audiofiles/speech/frl1151_phsc_16bands_RecombinedOriginal.wav"></audio>
+		    </span>
+		  </figure>
+		</section>
+				
+		
+		<section>
+		  <h2>Si on réduit le nombre de canaux... 12 canaux</h2>
+		  
+		  <div align="right">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_12bands_VocodedSpeech.wav"></audio>
+		  </div>
+		</section>
+		
+		<section>
+		  <h2>Si on réduit le nombre de canaux... 4 canaux</h2>
+		  
+		  <div align="right">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_04bands_VocodedSpeech.wav"></audio>
+		  </div>
+		</section>
+		
+		
+		<section>
+		  <h2>Si on augmente le nombre de canaux... 22 canaux</h2>
+		  
+		  <div align="right">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_22bands_VocodedSpeech.wav"></audio>
+		  </div>
+		</section>
+		
+		
+		<section>
+		  <h2>Si on augmente le nombre de canaux... 32 canaux</h2>
+		  
+		  <div align="right">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_32bands_VocodedSpeech.wav"></audio>
+		  </div>
+		</section>
+		
+		
+		
+		<section>
+		  <section>
+		    <h2>Limites / Défis...</h2>
+		  </section>
+		  
+		  <section>
+		    <h2>Limites / Défis...</h2>
+		  
+		  Aujourd'hui, les personnes qui portent un
+		  implant dépassent rarement un niveau de
+		  compréhension / reconnaissance supérieur à ce
+		  qu'on peut observer avec de la parole vocodée
+		  sur 12 canaux... lorsque le signal est optimal...
+		  <div align="right">
+		    <audio controls src="audiofiles/speech/frl1151_phsc_12bands_VocodedSpeech.wav"></audio>
+		  </div>
+		</section>
+		
+		
+		
+		<section>
+		  <h2>Limites / Défis...</h2>
+		  
+		  Contraintes techniques rendent difficile
+		  l'accroissement du nombre d'électrodes :
+		  phénomène d'interactions entre électrodes qui
+		  sont trop épaisses...
+		</section>
+		
+		
+		<section data-markdown>
+		  
+		  <textarea data-template>
+		    ## Limites / Défis...
+		    
+		    - Bonne réussite pour la parole dans des
+		    conditions "optimales".
+		    
+		    - Dès que les signaux s'écartent de ces conditions
+		    optimales (combinaison de plusieurs sources,
+		    réverbération, bruit, changements de locuteur,
+		    changements de débit, musique...) la perception est
+		    beaucoup plus difficile.
+		    
+		  </textarea>
+		  
+		</section>
+
+
+		<section data-markdown>
+		  
+		  <textarea data-template>
+		    ### Quelques défis sur lesquels nous travaillons au LLING...
+		    
+		    - Mieux comprendre les relations / différences entre
+		    parole et musique du point de vue des informations
+		    acoustiques les plus importantes;
+
+		    - Mieux comprendre les mécanismes mis en oeuvre par
+		    les auditeurs pour l'adaptation au changement (de
+		    locuteur, de débit);
+
+		    - Mieux comprendre l'impact du mécanisme de vocodage
+		    sur la disparition de certaines informations
+		    acoustiques;
+		     
+		  </textarea>
+		  
+		</section>
+		</section>			  
+
+
+						  
+		<section data-markdown>
+		  
+		  <textarea data-template>
+		    ## Atelier
+
+		    - Frontières : "acoustiques" entre les entendants et les personnes
+		    sourdes qui portent un implant cochléaire;
+
+		    - Frontières : entre des phénomènes sonores essentiels
+		    (parole vs. musique) du point de vue du mécanisme de
+		    vocodage;
+		  </textarea>
+		</section>
+		
+		<section data-markdown>
+		  
+		  <textarea data-template>
+		    ## Atelier
+		    - Exemple d'usage du vocodeur à canaux dans le chant
+
+		    - Vocodage complet d'extraits musicaux;
+
+		    - Tâche principale : Reconnaissez-vous le morceau que
+		    vous écoutez ?
+		    
+		    - Question secondaire : Indépendamment de
+		    votre capacité à reconnaître ces morceaux,
+		    est-ce que l'écoute parvient à vous
+		    procurer une forme de plaisir musical ?
+		  </textarea>
+		</section>
+		
+		
+		
+		<section>
+		  <h2>Un exemple d'usage du vocoder dans le chant</h2>
+		  
+		  <span align="right">
+		    <figure>
+			<figcaption>Kavinsky - Nightcall (BO de Drive / Nicolas Winding Refn)</figcaption>
+			<audio controls id="audio2-n" src="audiofiles/music/original/Nightcall-Kavinsky-extract.mp3"></audio>
+		    </figure>
+		  </span>
+		</section>
+		
+		
+
+			  
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio1-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_Kiss-Prince-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio1-n" src="audiofiles/music/original/Kiss-Prince-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Prince - Kiss</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio2-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_Nightcall-Kavinsky-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio2-n" src="audiofiles/music/original/Nightcall-Kavinsky-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Kavinsky - Nightcall (BO de Drive / Nicolas Winding Refn)</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio3-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_CrazyInLove-Beyonce-JayZ-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio3-n" src="audiofiles/music/original/CrazyInLove-Beyonce-JayZ-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Beyoncé (feat. JayZ) - Crazy in Love</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio4-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_ArtBlakeyJazzMessengers-ANightInTunisia-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio4-n" src="audiofiles/music/original/ArtBlakeyJazzMessengers-ANightInTunisia-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Art Blakey & the Jazz Messengers - A Night in Tunisia</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio5-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_PreludeALApresMidiDUnFaune-Debussy-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio5-n" src="audiofiles/music/original/PreludeALApresMidiDUnFaune-Debussy-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Debussy - Prélude à l'après-midi d'un faune</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio6-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_Bolero-Ravel-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio6-n" src="audiofiles/music/original/Bolero-Ravel-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Ravel - Bolero</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio7-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_RappersDelight-SugarhillGang-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio7-n" src="audiofiles/music/original/RappersDelight-SugarhillGang-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Sugarhill Gang - Rapper's Delight</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio8-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_HerbieHancock-WatermelonMan-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio8-n" src="audiofiles/music/original/HerbieHancock-WatermelonMan-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Herbie Hancock - Watermelon Man</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio9-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_TakeFive-DaveBrubeck-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio9-n" src="audiofiles/music/original/TakeFive-DaveBrubeck-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Take Five - Dave Brubeck</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio10-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_SingSingSing-BennyGoodman-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio10-n" src="audiofiles/music/original/SingSingSing-BennyGoodman-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Benny Goodman - Sing, Sing, Sing (with a Swing)</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio11-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_Pilgrimage-IsWhat-NapoleonMaddox-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio11-n" src="audiofiles/music/original/Pilgrimage-IsWhat-NapoleonMaddox-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>IsWhat?! (Napoleon Maddox) - Pilgrimage</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio12-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_BeatIt-MichaelJackson-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio12-n" src="audiofiles/music/original/BeatIt-MichaelJackson-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Michael Jackson - Beat It</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio13-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_WildIsTheWind-NinaSimone-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio13-n" src="audiofiles/music/original/WildIsTheWind-NinaSimone-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Nina Simone - Wild is the Wind</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio14-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_SacreDuPrintemps-DanseDesAdolescentes-Stravinsky-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio14-n" src="audiofiles/music/original/SacreDuPrintemps-DanseDesAdolescentes-Stravinsky-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Stravinsky - Le sacre du printemps (Danse des adolescentes)</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio15-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_Bach-VerletClavecin-BWV988-Aria.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio15-n" src="audiofiles/music/original/Bach-VerletClavecin-BWV988-Aria.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Bach (Blandine Verlet, clavecin) - Variations Goldberg (Aria)</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio16-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_ArtBlakeyJazzMessengers-ANightInTunisia2-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio16-n" src="audiofiles/music/original/ArtBlakeyJazzMessengers-ANightInTunisia2-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Art Blakey & the Jazz Messengers - A Night in Tunisia</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio17-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_Homestead-IsWhat-NapoleonMaddox-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio17-n" src="audiofiles/music/original/Homestead-IsWhat-NapoleonMaddox-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section> IsWhat?! (Napoleon Maddox) - Homestead</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio18-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_MyFunnyValentine-ChetBaker-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio18-n" src="audiofiles/music/original/MyFunnyValentine-ChetBaker-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Chet Baker - My Funny Valentine</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio19-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_StandByMe-OttisRedding-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio19-n" src="audiofiles/music/original/StandByMe-OttisRedding-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Ottis Redding - Stand by Me</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio20-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_Bach-Gould-BWV988-Aria.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio20-n" src="audiofiles/music/original/Bach-Gould-BWV988-Aria.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Bach (Glen Gould, piano) - Variations Goldberg (Aria)</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio21-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_FatAlbetRotunda-HerbieHancock-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio21-n" src="audiofiles/music/original/FatAlbetRotunda-HerbieHancock-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Herbie Hancock - Fat Albert Rotunda</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio22-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_Desafinado-JoaoGilberto-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio22-n" src="audiofiles/music/original/Desafinado-JoaoGilberto-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Joao Gilberto - Desafinado</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio23-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_PeggyLee-Fever-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio23-n" src="audiofiles/music/original/PeggyLee-Fever-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Peggy Lee - Fever</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio24-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_PurpleRain-Prince-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio24-n" src="audiofiles/music/original/PurpleRain-Prince-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Prince - Purple Rain</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio25-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_EllaFitzgerald-Dreamalittledreamofme-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio25-n" src="audiofiles/music/original/EllaFitzgerald-Dreamalittledreamofme-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Ella Fitzgerald - Dream a Little Dream of Me</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio26-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_YaRayah-RachidTaha-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio26-n" src="audiofiles/music/original/YaRayah-RachidTaha-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Rachid Taha - Ya Rayah (Dahmane El Harrachi)</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio27-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_HerbieHancock-Chameleon-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio27-n" src="audiofiles/music/original/HerbieHancock-Chameleon-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Herbie Hancock - Chameleon</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio28-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_NinaSimone-DontLetMeBeMisunderstood.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio28-n" src="audiofiles/music/original/NinaSimone-DontLetMeBeMisunderstood.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Nina Simone - Don't let me be Misunderstood</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio29-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_VillaLobos-SuitePopulaireBresilienne-3-Valsa.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio29-n" src="audiofiles/music/original/VillaLobos-SuitePopulaireBresilienne-3-Valsa.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Villa Lobos - Suite Populaire Brésilienne (Valsa)</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio30-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_BillieJean-MichaelJackson-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio30-n" src="audiofiles/music/original/BillieJean-MichaelJackson-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Michael Jackson - Billie Jean</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio31-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_StillD.R.E-DrDre-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio31-n" src="audiofiles/music/original/StillD.R.E-DrDre-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Still D.R.E. - Dr Dre (feat. Snoop Dogg)</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio32-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_HeartOfGlass-Blondie-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio32-n" src="audiofiles/music/original/HeartOfGlass-Blondie-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Blondie - Heart of Glass</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio33-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_OneWayO-Blondie-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio33-n" src="audiofiles/music/original/OneWayO-Blondie-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Blondie - One Way or Another</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio34-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_InsaneInTheBrain-CypressHill-extract.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio34-n" src="audiofiles/music/original/InsaneInTheBrain-CypressHill-extract.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Cypress Hill - Insane in the Brain</section></section>
+
+<section><section><h2>Reconnaissez-vous la musique ?</h2><h3>(Appréciez-vous son écoute ?)</h3>
+
+<span align="left">
+<figure>
+<figcaption>Musique vocodée (16 canaux)</figcaption>
+<audio controls id="audio35-v" src="audiofiles/music/vocoded/simulations_HFlim-16000_Schubert-BarryLindon-StanleyKubrick-PianoTrioEFlat-2ndMovement.mp3_phsc_16bands_Vocoded.flac"></audio>
+  </figure>
+  </span>
+ <span align="right">
+  <figure>
+ <figcaption>Musique originale</figcaption>
+ <audio controls id="audio35-n" src="audiofiles/music/original/Schubert-BarryLindon-StanleyKubrick-PianoTrioEFlat-2ndMovement.mp3"></audio>
+ </figure>
+ </span>
+ </section><section>Schubert - Trio pour piano en mi bémol (2nd mouvement, BO de Barry Lindon / Stanley Kubrick)</section></section>
+
+
+
+			</div>
+		</div>
+
+		
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
